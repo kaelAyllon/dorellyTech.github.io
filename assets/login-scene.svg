@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1648 928" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="bg" x1="0" y1=".42" x2="1" y2=".38"><stop stop-color="#100a70"/><stop offset=".48" stop-color="#071344"/><stop offset="1" stop-color="#0958f0"/></linearGradient>
+ <radialGradient id="burst" cx=".85" cy=".07" r=".65"><stop stop-color="#1276ff"/><stop offset=".55" stop-color="#1643bd" stop-opacity=".55"/><stop offset="1" stop-color="#1a04a6" stop-opacity="0"/></radialGradient>
+ <radialGradient id="bottom" cx=".3" cy="1.0" r=".7"><stop stop-color="#3a36ff" stop-opacity=".75"/><stop offset="1" stop-color="#181481" stop-opacity="0"/></radialGradient>
+ <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5974ff"/><stop offset=".45" stop-color="#a5d9ff"/><stop offset="1" stop-color="#2752fb"/></linearGradient>
+ <linearGradient id="cubeFront" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7b8dff"/><stop offset="1" stop-color="#2144ff"/></linearGradient>
+ <linearGradient id="cubeSide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#475fff"/><stop offset="1" stop-color="#0904c3"/></linearGradient>
+ <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#87a5ff"/><stop offset="1" stop-color="#4553ff"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="17"/></filter><filter id="glow"><feGaussianBlur stdDeviation="4"/></filter><filter id="cubeGlow"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="1648" height="928" fill="url(#bg)"/><rect width="1648" height="928" fill="url(#burst)"/><rect width="1648" height="928" fill="url(#bottom)"/>
+<path d="M302 -50 C196 227 250 468 472 618" fill="none" stroke="#375cf6" stroke-width="2" opacity=".82"/>
+<path d="M-129 330 C149 430 325 647 322 971" fill="none" stroke="#415eff" stroke-width="2.5" opacity=".68"/>
+<path d="M1681 329 C1415 440 1279 533 1265 982" fill="none" stroke="#3465ff" stroke-width="2.5" opacity=".68"/>
+<path d="M1234 515 Q1465 287 1742 261" fill="none" stroke="#3065f6" stroke-width="2" opacity=".38"/>
+<path d="M-150 939 Q710 507 1689 943" fill="none" stroke="#295cf7" stroke-width="26" filter="url(#soft)" opacity=".9"/>
+<path d="M-150 939 Q710 507 1689 943" fill="none" stroke="url(#arc)" stroke-width="3.5" opacity=".9"/>
+<g opacity=".6">
+<rect x="358" y="56" width="12" height="12" fill="#7892ff"/><rect x="140" y="264" width="9" height="12" fill="#addaff"/>
+<rect x="306" y="221" width="8" height="8" fill="#393cff"/><rect x="1460" y="99" width="9" height="9" fill="#bedfff"/>
+<rect x="1358" y="326" width="11" height="11" fill="#786cff"/><rect x="1431" y="705" width="8" height="8" fill="#8699ff"/>
+<rect x="1554" y="786" width="9" height="9" fill="#acc9ff"/><rect x="326" y="575" width="11" height="11" fill="#807aff"/>
+<rect x="255" y="486" width="9" height="9" fill="#4573ff"/><rect x="1384" y="521" width="9" height="9" fill="#c3dfff"/>
+<rect x="385" y="426" width="23" height="23" rx="4" fill="#522fff"/><rect x="1221" y="157" width="32" height="32" rx="5" fill="#5136ff"/>
+<rect x="1271" y="375" width="24" height="29" rx="5" fill="#a978ff"/>
+</g>
+<g fill="#83bcff"><circle cx="468" cy="150" r="5"/><circle cx="1327" cy="173" r="4"/><circle cx="388" cy="676" r="4"/><circle cx="1219" cy="560" r="5"/></g>
+<g fill="#c7e1ff" filter="url(#glow)" opacity=".9"><circle cx="468" cy="150" r="8"/><circle cx="1327" cy="173" r="7"/><circle cx="388" cy="676" r="6"/><circle cx="1219" cy="560" r="8"/></g>
+<circle cx="1493" cy="644" r="18" fill="#704aff" opacity=".95" filter="url(#soft)"/>
+<circle cx="238" cy="854" r="25" fill="#774dff" opacity=".88" filter="url(#soft)"/>
+<g transform="translate(1431 145) rotate(12 75 74)" opacity=".87">
+ <path d="M74 0L147 32 74 72 0 32Z" fill="url(#cubeTop)"/><path d="M0 32L74 72V151L0 107Z" fill="url(#cubeFront)"/><path d="M74 72L147 32V112L74 151Z" fill="url(#cubeSide)"/>
+</g>
+<g transform="translate(8 575) rotate(-13 99 99)" opacity=".9">
+ <path d="M100 0L200 64 99 119 0 61Z" fill="url(#cubeTop)"/><path d="M0 61L99 119V239L0 167Z" fill="url(#cubeFront)"/><path d="M99 119L200 64V177L99 239Z" fill="url(#cubeSide)"/>
+</g>
+<rect x="246" y="312" width="40" height="40" rx="11" fill="#4775ff" filter="url(#cubeGlow)" opacity=".5"/><rect x="247" y="314" width="40" height="40" rx="11" fill="#507aff"/>
+<circle cx="1400" cy="540" r="9" fill="#56a1ff"/><circle cx="1400" cy="540" r="15" fill="#54a5ff" filter="url(#glow)" opacity=".5"/>
+</svg>

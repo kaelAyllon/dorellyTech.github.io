@@ -1,0 +1,29 @@
+/* Menú y encabezado consistentes para los módulos principales. */
+.app-sidebar{width:230px;flex:0 0 230px;min-height:100vh;background:#142d45;color:#dbe8f7;display:flex;flex-direction:column;gap:0;padding:20px 12px;position:sticky;top:0;align-self:flex-start;max-height:100vh;overflow-y:auto;box-sizing:border-box}
+.app-sidebar *,.app-topbar *{box-sizing:border-box}
+.app-brand{display:flex;align-items:center;gap:10px;padding:4px 1px 22px!important;font-size:15px;font-weight:750;white-space:nowrap;color:#fff!important;text-decoration:none;letter-spacing:0}
+.app-brand-symbol{display:inline-flex;width:33px;height:33px;flex:0 0 33px;align-items:center;justify-content:center;border-radius:9px;background:linear-gradient(130deg,#17d8b1,#0a9fc0);color:#fff;font-size:23px;font-weight:bold}
+.app-sidebar-label{font-size:10px;font-weight:750;color:#83a2bc;letter-spacing:1.6px;padding:20px 10px 10px}
+.app-menu{display:flex;flex-direction:column;gap:6px}
+.app-menu-group{margin:0;padding:0;border:0}.app-menu-parent,.app-menu-link{display:flex;align-items:center;gap:11px;border:0;padding:12px 10px;color:#c9d9eb!important;text-decoration:none!important;border-radius:8px;font-size:13px;font-weight:650;cursor:pointer;background:transparent}
+.app-menu-parent{list-style:none}.app-menu-parent::-webkit-details-marker{display:none}.app-menu-parent>span:first-child,.app-menu-link>span:first-child{font-size:18px;min-width:18px;text-align:center}
+.app-menu-parent:hover,.app-menu-link:hover,.app-menu-parent.active,.app-menu-link.active{background:#1b536e!important;color:#60f0dc!important}
+.app-menu-chevron{margin-left:auto;transition:transform .18s;font-size:18px}.app-menu-group[open] .app-menu-chevron{transform:rotate(180deg)}
+.app-submenu{display:flex;flex-direction:column;margin:3px 0 5px 23px;padding-left:11px;border-left:1px solid #33506b;gap:2px}
+.app-submenu>a{display:block;padding:10px!important;border-radius:7px;color:#c6daeb!important;font-size:12px!important;text-decoration:none!important;background:none!important}
+.app-submenu>a:hover,.app-submenu>a.active{background:#22526b!important;color:#fff!important}
+.app-sidebar-footer{margin-top:auto;padding:17px 8px 8px;border-top:1px solid #39526b;color:#c5d9e9;font-size:11px;line-height:1.5}
+.app-sidebar-footer small{display:block;margin-left:15px!important;letter-spacing:0!important;font-size:10px;color:#91acc1!important}.app-online-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#16d7a9;margin-right:5px}
+.app-topbar{position:sticky;top:0;z-index:35;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#fff;min-height:95px;padding:17px 25px!important;border-bottom:1px solid #e1e8f1;width:100%;font-family:Inter,'Segoe UI',Arial,sans-serif}
+.app-topbar-title{min-width:0}.app-topbar-eyebrow{display:block;font-size:10px;letter-spacing:1.8px;color:#0787a7;font-weight:800}.app-topbar-title h1{font-size:25px;line-height:1.2;margin:5px 0 0;color:#102d49}.app-topbar-title p{font-size:12px;color:#788ba3;margin:6px 0 0}
+.app-topbar-account{display:flex;align-items:center;justify-content:flex-end;gap:11px;flex-shrink:0}.app-topbar-date{display:block;border:1px solid #e0e9f3;color:#5f7795;background:#f5f9fe;padding:10px 13px;border-radius:10px;font-size:11px;white-space:nowrap}
+.app-topbar-profile{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;border:1px solid #dce6f1;padding:9px 13px;background:#f5f8fd;border-radius:10px;min-width:125px;gap:3px}.app-profile-name{font-weight:800;color:#163658;font-size:11px;white-space:nowrap}.app-profile-role{font-size:10px;color:#6381aa;letter-spacing:.6px;font-weight:700}
+.app-logout-form{padding:0!important;margin:0!important;display:block}.app-logout-form input{display:none}.app-logout-form button{width:auto!important;min-width:auto!important;background:transparent!important;color:#254b70!important;border:0!important;padding:10px!important;cursor:pointer;font-size:12px;font-weight:700;box-shadow:none!important}
+.app-logout-form button:hover{background:#eef5fc!important;border-radius:8px}
+.users-page .users-layout{grid-template-columns:230px minmax(0,1fr)}.users-page .users-main{max-width:none;padding:0;min-width:0}.users-content{padding:24px;max-width:1720px;margin:auto}
+body:has(.app-sidebar) .layout>.app-sidebar{flex-shrink:0}
+@media(max-width:1150px){.app-topbar{flex-wrap:wrap}.app-topbar-account{margin-left:auto}.app-topbar-date{display:none}}
+@media(max-width:780px){.app-sidebar{position:relative;max-height:none;min-height:0;width:100%;flex-basis:auto;align-self:auto;padding:10px}.app-brand{padding-bottom:8px!important}.app-menu{flex-direction:row;flex-wrap:wrap}.app-menu-group,.app-menu-link{max-width:100%}.app-sidebar-footer,.app-sidebar-label{display:none}.app-topbar{position:sticky;min-height:0;padding:12px 14px!important}.app-topbar-title h1{font-size:21px}.app-topbar-profile{min-width:0}.users-page .users-layout{display:block}.users-content{padding:14px}}
+/* El panel lateral ocupa exactamente una columna del layout existente. */
+.app-layout{grid-template-columns:230px minmax(0,1fr)!important}
+@media(max-width:780px){.app-layout{display:block!important}}

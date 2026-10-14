@@ -1,0 +1,18 @@
+/* Un solo formulario emergente Nuevo / Editar usuarios. */
+.user-modal[hidden],.user-modal-panel[hidden],#catalogoVendedorLabel[hidden]{display:none!important}
+.user-modal{position:fixed;inset:0;z-index:900;display:flex;align-items:center;justify-content:center;padding:22px}
+.user-modal-backdrop{position:absolute;inset:0;background:rgba(13,32,63,.56);backdrop-filter:blur(4px)}
+.user-modal-dialog{position:relative;z-index:1;width:min(920px,100%);max-height:min(91vh,900px);display:flex;flex-direction:column;background:#fff;border:1px solid #dbe5f2;border-radius:16px;box-shadow:0 26px 85px rgba(13,37,76,.27);overflow:hidden}
+.user-modal-header{padding:20px 25px 16px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.user-modal-header h2{margin:0;font-size:22px;color:#143553}.user-modal-header p{margin:6px 0 0;color:#8293aa;font-size:12px}
+.user-modal-close{background:#f2f5f9;color:#63809c;border:0;border-radius:9px;font-size:25px;line-height:1;height:34px;width:34px;cursor:pointer}
+.user-modal-tabs{display:flex;border-bottom:1px solid #e6edf5;padding:0 25px;gap:8px}.user-modal-tabs button{border:none;background:none;color:#61758f;padding:13px 16px;cursor:pointer;font-size:13px;font-weight:650;border-radius:8px 8px 0 0}.user-modal-tabs button.is-active{background:#eaf4fd;color:#14649a;border-bottom:2px solid #0c91b6}
+.user-modal-scroll{padding:24px 25px;overflow-y:auto;flex:1;min-height:100px}.user-modal-panel .users-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.user-modal-panel .users-fields label{color:#405772;font-size:12px}.user-modal-panel .users-fields input,.user-modal-panel .users-fields select{min-width:0;max-width:100%;height:45px}
+.user-modal-panel .users-hint{line-height:1.7;margin:14px 0 0}.user-modal-panel h3{font-size:16px;color:#163a59;margin:0 0 8px}
+.user-modal-panel .users-permission-grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}.user-modal-panel .users-check{background:#f6f9fd;padding:13px;border:1px solid #e5eaf3;border-radius:9px;flex-direction:row;font-weight:500}
+.user-modal-panel.permissions-admin .users-permission-grid{opacity:.45;pointer-events:none}
+.user-modal-footer{display:flex;justify-content:flex-end;gap:12px;padding:16px 25px;border-top:1px solid #e5edf6;background:#fbfcfe}.user-modal-cancel{border:1px solid #d9e3ed;color:#546986;background:#fff;font-size:13px;padding:11px 17px;border-radius:8px;cursor:pointer}
+.user-modal-open{overflow:hidden}
+.users-actions{white-space:nowrap}.users-actions .users-edit{font-weight:700}.users-main .users-heading{margin-bottom:18px}
+.users-main .users-card-title{padding:18px 20px}.users-main .users-help{margin-top:16px}
+@media(max-width:650px){.user-modal{padding:8px}.user-modal-dialog{max-height:96vh}.user-modal-header,.user-modal-scroll,.user-modal-footer{padding:14px}.user-modal-tabs{padding:0 14px}.user-modal-panel .users-fields,.user-modal-panel .users-permission-grid{grid-template-columns:1fr}.user-modal-panel .users-fields{gap:12px}}
